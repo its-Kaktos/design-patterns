@@ -2,7 +2,7 @@ using System.Text;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethod.Products;
 
-public class HttpClient : IMessageSender
+public class HttpClient : IMessageClient
 {
     private const string Name = nameof(HttpClient);
 

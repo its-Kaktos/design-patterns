@@ -2,7 +2,7 @@ using System.Text;
 
 namespace DesignPatterns.CreationalPatterns.FactoryMethod.Products;
 
-public class BrokerClient : IMessageSender
+public class BrokerClient : IMessageClient
 {
     private const string Name = nameof(BrokerClient);
 

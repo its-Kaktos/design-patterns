@@ -5,7 +5,7 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod.Factory;
 
 public class HttpMessageSender : MessageSender
 {
-    protected override IMessageSender CreateSender()
+    protected override IMessageClient CreateClient()
     {
         return new HttpClient();
     }

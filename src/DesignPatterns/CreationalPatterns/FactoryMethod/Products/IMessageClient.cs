@@ -1,6 +1,6 @@
 namespace DesignPatterns.CreationalPatterns.FactoryMethod.Products;
 
-public interface IMessageSender
+public interface IMessageClient
 {
     void OpenConnection();
     void CloseConnection();

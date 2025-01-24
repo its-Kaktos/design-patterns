@@ -4,7 +4,7 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod.Factory;
 
 public class BrokerMessageSender : MessageSender
 {
-    protected override IMessageSender CreateSender()
+    protected override IMessageClient CreateClient()
     {
         return new BrokerClient();
     }
