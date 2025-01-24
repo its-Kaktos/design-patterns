@@ -4,7 +4,9 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod;
 
 /// <summary>
 /// Factory method design pattern.
-/// Reference: https://refactoring.guru/design-patterns/factory-method
+/// References:
+///     https://refactoring.guru/design-patterns/factory-method
+///     https://www.youtube.com/watch?v=EdFq_JIThqM&ab_channel=Geekific
 /// Note from reference:
 /// Note that, despite its name, the creator's primary
 /// responsibility isn't creating products. It usually
