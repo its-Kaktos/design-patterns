@@ -15,6 +15,9 @@ namespace DesignPatterns.CreationalPatterns.FactoryMethod;
 /// indirectly change that business logic by overriding the
 /// factory method and returning a different type of product
 /// from it.
+///
+/// We can use other things instead of factory method, e.g: using a func
+/// or using a DI container.
 /// </summary>
 public class Example
 {
