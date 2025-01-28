@@ -4,6 +4,6 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactory.Factories;
 
 public interface IPriceCalculator
 {
-    IShippingPriceCalculator CreateShippingPriceCalculator();
-    ITaxPriceCalculator CreateTaxPriceCalculator();
+    ShippingDto CreateShippingPrice();
+    TaxDto CreateTaxPrice();
 }

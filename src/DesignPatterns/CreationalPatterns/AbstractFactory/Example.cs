@@ -1,5 +1,4 @@
 using DesignPatterns.CreationalPatterns.AbstractFactory.Factories;
-using DesignPatterns.CreationalPatterns.AbstractFactory.Products;
 
 namespace DesignPatterns.CreationalPatterns.AbstractFactory;
 
@@ -19,8 +18,8 @@ public class Example
             _ => throw new InvalidOperationException()
         };
 
-        var taxCalc = priceCalculator.CreateTaxPriceCalculator();
-        var shippingPriceCalc = priceCalculator.CreateShippingPriceCalculator();
-        Console.WriteLine($"Tax rate for you is {taxCalc.Calc(UserType.Normal)}, and your discount rate is {shippingPriceCalc.Calc("LA")}");
+        var taxCalc = priceCalculator.CreateTaxPrice();
+        var shippingPriceCalc = priceCalculator.CreateShippingPrice();
+        Console.WriteLine($"Tax rate for you is {taxCalc}, and your discount rate is {shippingPriceCalc}");
     }
 }

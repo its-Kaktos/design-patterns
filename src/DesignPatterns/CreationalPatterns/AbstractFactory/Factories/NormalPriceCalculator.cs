@@ -4,13 +4,13 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactory.Factories;
 
 public class NormalPriceCalculator : IPriceCalculator
 {
-    public IShippingPriceCalculator CreateShippingPriceCalculator()
+    public ShippingDto CreateShippingPrice()
     {
-        return new NormalDayShippingPriceCalculator();
+        return new ShippingDto(23.2m);
     }
 
-    public ITaxPriceCalculator CreateTaxPriceCalculator()
+    public TaxDto CreateTaxPrice()
     {
-        return new NormalDayTaxPriceCalculator();
+        return new TaxDto(UserType.Normal, 0.9m);
     }
 }

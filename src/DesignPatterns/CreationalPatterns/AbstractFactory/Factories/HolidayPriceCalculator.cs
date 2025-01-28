@@ -4,13 +4,13 @@ namespace DesignPatterns.CreationalPatterns.AbstractFactory.Factories;
 
 public class HolidayPriceCalculator : IPriceCalculator
 {
-    public IShippingPriceCalculator CreateShippingPriceCalculator()
+    public ShippingDto CreateShippingPrice()
     {
-        return new HolidayShippingPriceCalculator();
+        return new ShippingDto(2.3m);
     }
 
-    public ITaxPriceCalculator CreateTaxPriceCalculator()
+    public TaxDto CreateTaxPrice()
     {
-        return new HolidayTaxPriceCalculator();
+        return new TaxDto(UserType.Normal, 0.07m);
     }
 }
